@@ -23,7 +23,8 @@ MonoBehaviour:
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
     depthBufferBits: 0
-    shaderTags: []
+    shaderTags:
+    - Footprint
     colorFormat: 10
     renderTargetName: 
     overrideResolution: 0

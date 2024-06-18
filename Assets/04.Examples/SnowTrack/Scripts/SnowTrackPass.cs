@@ -42,14 +42,14 @@ namespace SnowTrack
 
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
-            RenderTextureDescriptor descripter = cameraTextureDescriptor;
-            descripter.depthBufferBits = trackRT.rt.depth;
-            descripter.colorFormat = trackRT.rt.format;
-            descripter.width = trackRT.rt.width;
-            descripter.height = trackRT.rt.height;
+            //RenderTextureDescriptor descripter = cameraTextureDescriptor;
+            //descripter.depthBufferBits = trackRT.rt.depth;
+            //descripter.colorFormat = trackRT.rt.format;
+            //descripter.width = trackRT.rt.width;
+            //descripter.height = trackRT.rt.height;
             
-            RenderingUtils.ReAllocateIfNeeded(ref tempRT, descripter, wrapMode : TextureWrapMode.Clamp , name: tempRTName);
-            RenderingUtils.ReAllocateIfNeeded(ref oldTrackRT, descripter, wrapMode: TextureWrapMode.Clamp, name: tempRTName);
+            //RenderingUtils.ReAllocateIfNeeded(ref tempRT, descripter, wrapMode : TextureWrapMode.Clamp , name: tempRTName);
+            //RenderingUtils.ReAllocateIfNeeded(ref oldTrackRT, descripter, wrapMode: TextureWrapMode.Clamp, name: tempRTName);
         }
 
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
